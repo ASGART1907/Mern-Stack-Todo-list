@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #083d56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  min-height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(to left,#f0f87f,#eac100);
+  box-shadow: 3px 3px 15px darkblue;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card ul{
+  overflow: auto;
+  margin-top: 20px;
+  height: 210px;
+  overflow: auto;
+}
+
+
+.card ul li{
+  position: relative;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#f45905;
+  padding: 7px 10px;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.card ul li .icons{
+  gap: 10px;
+
+}
+
+.card ul li .icons i{
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.card ul li .icons .fa-trash-alt{
+  color:maroon;
+}
+
+
+.card h2{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #083d56;
+}
+
+input,button{
+  border: none;
+  outline: none;
+}
+
+.card input{
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fafcd6;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card button{
+  position: relative;
+  width: 90%;
+  background-color:mediumseagreen;
+  color:darkgreen;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.40s ease-in-out;
+  color: white;
+}
+
+
+.card button:hover{
+  background-color: limegreen;
+}
